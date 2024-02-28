@@ -1,0 +1,109 @@
+p, div {
+    margin: 0;
+    padding: 0;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification {
+    margin-right: 25px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ye-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #FFCC00;
+
+}
+
+.living {
+    position: absolute;
+    bottom: -10px;
+    background-color: #FFCC00;
+    color: #ffffff;
+    width: 42px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+
+}
+
+.photo-container {
+    position: relative;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nikname {
+    margin-top: 14px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.infomation {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-item {
+    width: 114px;
+    text-align: center;
+}
+
+.info-item-data {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.info-item-label {
+    margin-top: 10px;
+    color: #8B8A8D
+}
+
+.reaction {
+    display: flex;
+    justify-content: left;
+    margin: 10px auto;
+}
+
+.action-item {
+    border-radius: 3px;
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    width: 46px;
+    height: 49px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    margin-right: 6px;
+}

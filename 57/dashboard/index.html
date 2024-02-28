@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <script src="../common//env.js"></script>
+    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./echarts.min.js"></script>
+    
+    
+</head>
+
+<body>
+    <header>
+        <p> Dashboard</p>
+    </header>
+    <div class="container">
+        <div class="totalView">
+            <div class="left">
+                <p class="totalBalance">6028</p>
+                <small class="balanceLabel">Total balance</small>
+                <p class="ing">
+                    <span style="color:#006492">ING ACCOUNT</span>
+                    :432132</p>
+                <P class="brd">
+                    <span style="color:#006C52">BRD ACCOUNT</span>
+                    :342424</P>
+                <P class="cash">CASH:0</P>
+
+            </div>
+            <div id="rightChart">
+
+            </div>
+        </div>
+        <div class="earnAndSpent">
+            <div class="earn"></div>
+            <div class="spent"></div>
+        </div>
+        <div class="balance">
+
+        </div>
+        <div class="mouthBalance"></div>
+        <div class="compare">
+            <div class="compareChart"></div>
+            <div class="tabs">
+                <div>ING</div>
+                <div>BRD</div>
+                <div>CASH</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var dom = document.getElementById('rightChart');
+var rightChart = echarts.init(dom, null, {
+  renderer: 'canvas',
+  useDirtyRect: false
+});
+
+var option;
+
+var rightChartOption = {
+
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    orient: 'vertical',
+    left: 'left',
+    show:false
+  },
+ grid:{
+    top:'0px',
+    left:'0px',
+    bottom:'0px',
+    right:'0px'
+ },
+  series: [
+
+    {
+    radius: '100%',
+      name: 'Access From',
+      type: 'pie',
+      data: [
+        { value: 1048, name: 'Search Engine' },
+        { value: 735, name: 'Direct' },
+       
+      ],
+      label:{
+        position:'inside'
+      },
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+
+rightChart.setOption(rightChartOption)
+
+
+var balanceDom = document.getElementsByClassName('balance')[0];
+var balanceChart = echarts.init(balanceDom, null, {
+  renderer: 'canvas',
+  useDirtyRect: false
+});
+
+
+var balanceOption = {
+    title:{
+        text:'balence'
+    },
+  xAxis: {
+    type: 'category',
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [
+        120,
+        {
+          value: 200,
+          itemStyle: {
+            color: '#a90000'
+          }
+        },
+        150,
+        80,
+        70,
+        110,
+        130
+      ],
+      type: 'bar'
+    }
+  ]
+};
+
+
+  balanceChart.setOption(balanceOption);
+
+
+  var monthDom = document.getElementsByClassName('mouthBalance')[0];
+var monthChart = echarts.init(monthDom, null, {
+  renderer: 'canvas',
+  useDirtyRect: false
+});
+
+var monthOption = {
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [820, 932, 901, 934, 1290, 1330, 1320],
+      type: 'line',
+      areaStyle: {}
+    }
+  ]
+};
+
+
+    monthChart.setOption(monthOption);
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,18 @@
+.container{
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(219,219,219);
+    padding-left: 10px;
+   textarea{
+    font-size: 17px;
+    width: 280px;
+    border: none;
+    outline: none;
+    resize: none;
+   }
+   .info{
+    display: flex;
+    justify-content: space-between;
+    padding-right:  10px;
+    margin-bottom: 10px;
+   }
+}

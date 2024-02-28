@@ -1,0 +1,90 @@
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.13rem;
+    font-weight: 500;
+    height: 0.38rem;
+    padding-left: 0.14rem;
+    background-color:#D4F4E4;;
+}
+header .title{
+    margin-left: 0.2rem;
+}
+.cardContainer{
+    height: 1.4rem;
+    background-color:#D4F4E4;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 0.09rem;
+    color: #404944;
+}
+.card{
+    width: 1.68rem;
+    height: 1rem;
+    background-color: #8ED6B2;
+    border-radius: 0.06rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 0.15rem;
+}
+.card>div{
+    margin-top: 0.045rem;
+}
+.caTitle{
+    font-size: 0.13rem;
+    font-weight: 600;
+    color: #8E928F;
+    margin-top: 0.17rem;
+    text-align: center;
+}
+.detailList{
+    background-color: #fafaf9;
+    margin-top: 0.17rem;
+   padding: 0.1rem;
+    margin: 0;
+}
+.detailList .title {
+    font-size: 0.13rem;
+    font-weight: 600;
+    color: #8E928F;
+    text-align: center;
+   
+}
+
+.detailList .item {
+    height: 0.32rem;
+    padding: 0.05rem 0.23rem;
+    background-color: #fff;
+    margin-top: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailList .item .itemLeft {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 0.06rem;
+}
+
+.detailList .item .itemIcon {
+    width: 0.32rem;
+}
+
+.detailList .item .itemDate {
+    color: #747875;
+
+    font-size: 0.08rem;
+    font-weight: 300;
+}
+
+.detailList .item .num {
+    color: #444745;
+    font-size: 0.09rem;
+    font-weight: 500;
+}

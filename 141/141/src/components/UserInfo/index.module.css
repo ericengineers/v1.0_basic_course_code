@@ -1,0 +1,55 @@
+.user {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+
+    .tx {
+        width: 34px;
+        height: 34px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .nikName {
+        text-align: left;
+        margin-left: 10px;
+    }
+   
+}
+
+.detail{
+    width: 300px;
+    background-color: #fff;
+    .base{
+        display: flex;
+        align-items: center;
+        padding: 16px;
+    }
+    .reactionData{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .data{
+        font-weight: 600;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    .follow{
+        margin:20px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+

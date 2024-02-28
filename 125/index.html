@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 回调，回调函数，回调地狱
+        // 同步的
+        // promise
+        // const funcA=(params)=>{
+        //     const {a,callback}=params;
+        //     console.log(1);
+        //     alert('你好吗')
+        //     callback&&callback({c:3})
+        // }
+
+        // const funcB=(p)=>{
+        //     console.log(p);
+        //     // 10s
+            
+        //     setTimeout(() => {
+        //         p.callback()
+        //     }, 3000);
+
+        // }
+
+        // funcA({
+        //     a:1,
+        //     callback:(res)=>{//回调函数
+        //         console.log('callback就会被打印');
+        //         funcB({
+        //             c:res.c,
+        //             callback:()=>{
+        //                 console.log('最终的结果');
+        //             }
+        //         })
+        //     }
+        // })
+
+        // 用到promise
+        
+        const funcA=()=>{
+            return new Promise((resolve,reject)=>{
+                console.log(1);
+                alert('你好吗')
+                resolve(123)
+            })
+        }
+
+        const funcB=(p)=>{
+            return new Promise((resolve,reject)=>{
+                console.log(p?.c);
+                setTimeout(()=>{
+                    resolve(456)
+                },3000)
+            })
+        }
+
+        funcA().then(()=>{
+            console.log('callback就会被打印');
+            return funcB({
+                c:3
+            })
+        }).then((res)=>{
+            console.log('最终的结果',a)
+
+        })
+        
+        // Promise.all([funcA(),funcB()]).then((res)=>{
+        //     console.log(res);
+        // })
+
+    </script>
+</body>
+</html>

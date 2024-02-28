@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #content{
+            background-color: aqua;
+        } */
+        /* .container{
+            background-color: blanchedalmond;
+        } */
+    </style>
+</head>
+<body>
+
+    <div id="content" class="container" data-index="15">12123123</div>
+    <script>
+        var index=null;
+        index=document.getElementById('content').getAttribute('data-index');
+        console.log('取data值：',index);
+        
+    </script>
+</body>
+</html>

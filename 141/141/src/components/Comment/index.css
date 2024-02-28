@@ -1,0 +1,44 @@
+
+.comment-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 16px;
+    margin-top: 10px;
+    
+    .comment-sub-list{
+        margin: 10px 0;
+        padding-left: 55px;
+        cursor: pointer;
+    }
+}
+.comment-item {
+   
+    position: relative;
+    .comment-op {
+        padding-left: 55px;
+        font-size: 12px;
+    }
+    .btn {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 20px;
+        font-size: 16px;
+        color: #bfb6b6;
+        cursor: pointer;
+    
+        .active {
+            color: #f26161;
+        }
+    }
+    
+}
+
+
+.comment-item .comment-text {
+    color: #000;
+    font-size: 14px;
+    font-weight: 100;
+    padding-left: 55px;
+}

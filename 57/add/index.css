@@ -1,0 +1,158 @@
+header {
+    height: 0.57rem;
+    font-size: 0.12rem;
+    background-color: #D4F4E4;
+    display: flex;
+    align-items: flex-end;
+}
+
+header>p {
+    margin-left: 0.25rem;
+    margin-bottom: 0.11rem;
+    font-weight: 500;
+}
+
+.group {
+    background-color: #D4F4E4;
+    height: 0.2rem;
+    font-size: 0.08rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.group>div {
+    width: 0.9rem;
+
+    text-align: center;
+}
+
+.group>div:first-child {
+    border-bottom: solid 0.02rem #008768;
+}
+
+.container {
+    font-size: 0.07rem;
+    padding: 0 0.3rem;
+}
+
+.inputWrap {
+    display: flex;
+    height: 0.29rem;
+    padding: 0.25rem 0.14rem;
+    align-items: center;
+}
+
+.sym {
+    font-size: 0.22rem;
+    margin-top: -0.03rem;
+}
+
+.input {
+    margin-left: 0.09rem;
+    flex-grow: 2;
+    overflow: hidden;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ECEEEB;
+    font-size: 0.26rem;
+    width: 1rem;
+    font-weight: 400;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+
+}
+.category>div>img{
+    width: 0.25rem;
+}
+
+
+.unit {
+    font-size: 0.15rem;
+    color: #0076E3;
+}
+
+.btn {
+    width: 0.7rem;
+    height: 0.21rem;
+    text-align: center;
+    line-height: 0.21rem;
+    color: #006492;
+    border-radius: 0.22rem;
+    border: 1px solid #1CA380;
+}
+.account .selected{
+    background-color: #008768;
+    color: #fff;
+}
+
+.title{
+    font-size: 0.1rem;
+    font-weight: 500;
+    color: #707974;
+    margin-top: 0.16rem;
+    margin-bottom: 0.07rem;
+}
+.confirm{
+    height: 0.32rem;
+    border-radius: 0.05rem;
+    background-color: #1ca380;
+    text-align: center;
+    line-height: 0.32rem;
+    font-size: 0.1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 0.3rem;
+}
+.numPannel{
+    visibility:visible;
+    padding: 0.025rem 0.038rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.17rem;
+    background-color: #fcfcfc;
+    display: grid;
+    grid-template-columns:repeat(4,0.64rem) ;
+    grid-template-rows:repeat(3,0.19rem) ;
+    grid-column-gap: 0.035rem;
+    grid-row-gap: 0.08rem;
+    font-size: 0.12rem;
+    font-weight: 400;
+    line-height: 0.19rem;
+    justify-content: center;
+}   
+
+.numPannel>div{
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+
+}
+.lastLine{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fcfcfc !important;
+}
+.lastLine>div{
+    width: 0.87rem;
+    height: 0.3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fcfcfc ;
+}

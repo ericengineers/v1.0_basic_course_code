@@ -1,0 +1,69 @@
+.main{
+    padding-left: 140px;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    height: 116vh;
+    width: 630px;
+}
+.right{
+    width: 200px;
+    height: 100vh;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width:800px ) {
+    .right{
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px ) {
+    .left{
+        display: none;
+    }
+}
+
+.my-follow-user{
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+    width: auto;
+    height: 82px;
+    .user{
+        margin-left: 10px;
+        .avator{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: linear-gradient(90deg, rgba(231,104,69,1) 0%, rgba(235,213,140,1) 35%, rgba(158,0,255,1) 100%);;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tx{
+            width:54px;
+            height: 54px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+               width: 100%; 
+            }
+        }
+        .nikname{
+            font-size: 13px;
+            color: #635c5c;
+            text-align: center;
+        }
+    }
+}
+
+
+.list{
+    padding-left: 74px;
+}
+

@@ -1,0 +1,16 @@
+
+div{
+    color: blueviolet;
+}
+*{
+    color: brown;
+}
+*[data-version*="1.0"]{
+    color: blue;
+}
+.container{
+    color: blanchedalmond;
+}
+#root{
+    color: aquamarine;
+}

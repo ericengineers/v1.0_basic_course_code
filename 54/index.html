@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+        width: 100px;
+        height: 100px;
+        background-color: antiquewhite;
+        animation: myMove;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 500ms;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-iteration-count: 3;
+       }
+
+       @keyframes myMove{
+        10%{
+            width: 130px;
+            background-color: aqua;
+        }
+        20%{
+            width: 160px;
+            background-color: black;
+            font-size: 20px;
+        }
+        24%{
+            width: 180px;
+            background-color: rgb(198, 67, 67);
+            font-size: 20px;
+            transform: rotate(30deg);
+            transform: translate(20PX,20px);
+        }
+
+        50%{
+            width: 200PX;
+            background-color: aliceblue;
+            font-size: 12PX;
+        
+        }
+        to{
+            width: 140px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div>1213321321</div>
+</body>
+</html>

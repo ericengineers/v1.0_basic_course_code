@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: #fff;
+            font-size: 20px;
+            transition-duration: 1s;
+            /* transition: 2s; */
+            /* transition-property: width,color,font-size; */
+            transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition-delay: 1000ms;
+        }
+        div:hover{
+            width: 200px;
+            background-color: antiquewhite;
+            color: red;
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div>
+        这是字
+    </div>
+    
+</body>
+</html>

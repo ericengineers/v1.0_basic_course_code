@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            margin-top: 4px;
+        }
+        .content{
+            position: fixed;
+            background-color: black;
+            left: 50%;
+            top:50%;
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+        .father{
+            margin-top: 50px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="child"></div>
+        <div class="child content"></div>
+        <div class="child"></div>
+    </div>
+    
+</body>
+</html>

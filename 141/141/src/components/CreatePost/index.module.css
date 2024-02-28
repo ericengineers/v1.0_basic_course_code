@@ -1,0 +1,57 @@
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wrap{
+        min-width: 700px;
+        min-height: 200px;
+        max-height: 800px;
+        border-radius: 6px;
+        background-color: #fff;
+        .header{
+            height: 42px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(219, 219, 219);;
+            .stepOne{
+                text-align: center;
+                flex-grow: 2;
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+        .content{
+            width: 100%;
+            .up{
+                min-height: 200px;
+                max-height: 800px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .post{
+                display: flex;
+                .preview{
+                    .postImg{
+                        width: 400px;
+                        min-height: 400px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .textArea{
+                    width: 322px;
+                    
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,442 @@
+body{
+    font-family:-apple-system, BlinkMacSystemFont;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.container{
+    
+}
+.left{
+    border-right: 1px solid rgb(219, 219, 219);
+    width: 140px;
+    padding: 8px 12px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.logo{
+    margin: 25px 12px;
+}
+.menu{
+   
+    font-size: 16px;
+   
+}
+.menu .name{
+    font-size: 12px;
+    
+    margin-left: 8px;
+}
+.menu li{
+    display: flex;
+    align-items: center;
+    height: 36px;
+    cursor: pointer;
+    padding-left: 12px;
+    border-radius: 4px;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.menu .active{
+    font-weight: 600;
+}
+.menu-bottom{
+    padding-left: 12px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+}
+
+.down-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+}
+
+.main{
+    padding-left: 140px;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    height: 116vh;
+    width: 400px;
+}
+.right{
+    width: 200px;
+    height: 100vh;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width:800px ) {
+    .right{
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px ) {
+    .left{
+        display: none;
+    }
+}
+
+.my-follow-user{
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+    width: auto;
+    height: 82px;
+}
+.user{
+    margin-left: 10px;
+}
+.avator{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(231,104,69,1) 0%, rgba(235,213,140,1) 35%, rgba(158,0,255,1) 100%);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tx{
+    width:44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.nikname{
+    font-size: 10px;
+    color: #635c5c;
+    text-align: center;
+}
+.list{
+    padding-left: 74px;
+}
+
+.post{
+    position: relative;
+    width: 320px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    margin-bottom: 10px;
+}
+.post .user-info{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.user-info .tx{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ada7a7;
+    
+}
+.user-info .nikname{
+    margin-left: 10px;
+}
+.user-info .create-date{
+    font-size: 10px;
+    color: rgb(144, 141, 138);
+}
+.user-info .follow{
+    color: rgb(0, 149, 246);
+}
+.user-info .operation{
+    position: absolute;
+    right: 0;
+}
+.picture-container{
+    margin-top: 10px;
+}
+
+.picture-container swiper-slide img{
+    width: 320px;
+    height: auto;
+}
+
+swiper-container::part(button-prev){
+    width: 8px;
+    height: auto;
+    color: #ffffff;
+}
+
+swiper-container::part(button-next){
+    
+    width: 8px;
+    height: auto;
+    color: #ffffff;
+}
+
+swiper-container::part(bullet-active) {
+    background-color: rgb(255, 255, 255);
+    width: 6px;
+    height: 6px;
+  }
+  
+swiper-container::part(bullet) {
+    background-color: rgb(245, 239, 239);
+    width: 6px;
+    height: 6px;
+  }
+
+  .reaction{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #dbd2d2;
+  }
+  .reaction .active{
+    color: #e57373;
+  }
+  .reaction div{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .reaction div:hover{
+    color: #b0a3a3;
+  }
+  .reaction div:first-child{
+    margin-left: 0;
+  }
+  .reaction .mark{
+    position: absolute;
+    right: 0;
+  }
+
+  .reaction-data{
+    margin-top: 6px;
+    font-size: 10px;
+    color: #645858;
+    cursor: pointer;
+  }
+  .reaction-data div{
+    margin-top: 4px;
+  }
+  .comment{
+    display: flex;
+    justify-content: start;
+  }
+  .comment input{
+    width: 280px;
+    border: none;
+    outline: none;
+    font-size: 10px;
+  }
+  .comment input:active{
+    border: none;
+  }
+  .comment .ok-btn{
+    color: rgb(0, 149, 246); 
+  }
+  .re-user{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+  }
+  .re-user .tx{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .re-user .nikname{
+    text-align: left;
+    margin-left: 4px;
+  }
+.re-user .btn{
+    position: absolute;
+    right: 0;
+    font-size: 8px;
+    font-weight: bold;
+    color: rgb(0, 149, 246); 
+}
+.re-title{
+    font-size: 10px;
+    color: rgb(115, 115, 115);
+    margin: 16px 0;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.recommend .re-user{
+    margin-top: 10px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.about a{
+    color: rgb(199, 199, 199);
+    font-size: 10px;
+    text-decoration: none;
+}
+.about a::after{
+    color:  rgb(199, 199, 199);
+}
+.about a:active{
+    color:  rgb(199, 199, 199);
+}
+.version{
+    margin-top: 20px;
+    color: rgb(199, 199, 199);
+    font-size: 10px;
+}
+
+
+.modal{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+.modal .mask{
+    position: absolute;
+    background-color: #000;
+    opacity: 0.7;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    z-index: 1;
+}
+.modal .content{
+    width: 800px;
+    height: 630px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    margin-left: -400px;
+    top: 2%;
+    bottom: 2%;
+    display: flex;
+    justify-content: start;
+
+} 
+.post-detail{
+    height: 100%;
+    /* flex-grow: 2; */
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.comment-detail{
+    height: 100%;
+    width: 300px;
+}
+
+.modal .close{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    z-index: 3;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.post-detail swiper-slide img{
+    width: 500px;
+    height: auto;
+}
+
+.comment-detail .user-info{
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom:  rgb(219, 219, 219) solid 1px;
+}
+
+.comment-detail .reaction{
+    width: 300px;
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    border-top:  rgb(219, 219, 219) solid 1px;
+    
+}
+.comment-detail .reaction div{
+    margin-left: 0;
+    padding-left: 10px;
+}
+
+.comment-detail .comment{
+    margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.comment-detail .reaction .icons{
+    display: flex;
+    justify-content: start;
+    position: relative;
+    width: 300px;
+    padding: 10px 0;
+}
+
+.comment-detail .reaction .icons .mark{
+    right: 20px;
+}
+.comment-detail .comment .ok-btn{
+    font-size: 10px;
+    width: 40px;
+}
+.comment-list {
+    height: 460px;
+    overflow:auto;
+}
+
+.comment-list .item{
+    display: flex;
+    justify-content: start;
+    margin-left: 16px;
+    margin-top: 10px;
+    position: relative;
+}
+.comment-list .item .tx{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.comment-list .item .nikname{
+    text-align: left;
+    /* margin-top: 20px; */
+    width: 220px;
+    margin-left: 6px;
+}
+.comment-list .item .btn{
+    position: absolute;
+    right: 20px;
+    font-size: 10px;
+    color: #bfb6b6;
+    cursor: pointer;
+}
+.comment-detail .item .comment-text{
+    color: #000;
+    font-size: 8px;
+    font-weight: 100;
+}

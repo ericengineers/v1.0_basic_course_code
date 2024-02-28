@@ -1,0 +1,41 @@
+header{
+    height: 1.07rem;
+    background-color: #D4F4E4;
+    padding: 0.25rem 0.14rem 0.23rem 0.36rem;
+}
+.avator{
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.bottom{
+    margin-top: 0.1rem;
+    height: 0.35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    font-size: 0.13rem;
+    font-weight: 400;
+}
+.email{
+    font-size: 0.1rem;
+    color: #707974;
+}
+.right{
+    width: 0.3rem;
+    display: flex;
+
+}
+.content{
+    font-size: 0.08rem;
+}
+.content .item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0.33rem;
+    margin-left: 0.35rem;
+}

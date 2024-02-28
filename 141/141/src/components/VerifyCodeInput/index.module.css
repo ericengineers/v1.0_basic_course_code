@@ -1,0 +1,18 @@
+.verifyCodeContainer{
+    position: relative;
+    width: 100%;
+
+    .verifyCodeSend{
+        position: absolute;
+        right: 50px;
+        top:6px;
+        height:26px ;
+    }
+    input{
+        width: 258px;
+        height: 36px;
+        border: 1px solid rgb(219, 219, 219);
+        margin-bottom: 6px;
+        padding-left: 10px;
+    }
+}

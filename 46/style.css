@@ -1,0 +1,23 @@
+/* img{
+    border:4px solid red;
+} */
+
+/* #message{
+    border: 10px dashed red;
+} */
+
+#cityDescription>img~*{
+    border: 10px dashed red;
+}
+
+a[href$=p]{
+    border: 10px dashed #000;
+}
+
+#roomList>ul>li:{
+    border: 2px dashed red;
+}
+a[href^=\#]:hover{
+    color: green;
+    border: 2px dashed #980c83;
+}

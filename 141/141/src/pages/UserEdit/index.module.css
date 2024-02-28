@@ -1,0 +1,35 @@
+.container {
+    width: 520px;
+    margin: 0 auto;
+    padding: 50px;
+
+    .pageTitle {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .userInfo {
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(239, 239, 239);
+        border-radius: 14px;
+        margin-top: 30px;
+    }
+
+    .formItem {
+        margin-top: 20px;
+        margin-left: -8px;
+        .formTitle{
+            margin:10px 0;
+            font-size: 17px;
+            font-weight: 700;
+        }
+    }
+
+    .submit {
+        display: flex;
+        margin-left: 1px;
+        /* justify-content: center; */
+    }
+}

@@ -1,0 +1,138 @@
+
+
+header {
+    height: 0.57rem;
+    font-size: 0.12rem;
+    background-color: #D4F4E4;
+    display: flex;
+    align-items: flex-end;
+}
+
+header>p {
+    margin-left: 0.25rem;
+    margin-bottom: 0.11rem;
+    font-weight: 500;
+}
+
+.container {
+    background-color: #F9FBF8;
+    min-height: 100vh;
+    padding: 0 0.15rem;
+}
+
+.totalView {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1.41rem;
+    background-color: #fff;
+    margin-top: 0.15rem;
+    font-size: 0.08rem;
+}
+
+.left { 
+    margin-left: 0.16rem;
+    height: 0.92rem;
+}
+#rightChart{
+    margin-left: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.16rem;
+}
+.totalBalance {
+    font-size: 0.2rem;
+    font-weight: 500;
+}
+
+.balanceLabel {
+    font-size: 0.1rem;
+    font-weight: 500;
+    color: #BFC9C3;
+}
+
+.ing {
+    margin-top: 0.16rem;
+    font-weight: 3rem;
+    color: #8E928F;
+}
+
+.brd {
+    font-weight: 3rem;
+    color: #8E928F;
+}
+
+.cash {
+    font-weight: 3rem;
+    color: #000;
+}
+
+.earnAndSpent {
+    margin-top: 0.15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.earn, .spent {
+    width: 1.21rem;
+    height: 1.06rem;
+    background-color: #fff;
+}
+
+.spent {
+    margin-left: 0.13rem;
+}
+
+.balance {
+    margin-top: 0.15rem;
+    height: 1.76rem;
+    background-color: #fff;
+    padding-top: 0.1rem;
+    padding-left: 0.1rem;
+}
+
+.mouthBalance {
+    margin-top: 0.15rem;
+    height: 1.76rem;
+    background-color: #fff;
+}
+
+.compare {
+    margin-top: 0.15rem;
+    height: 2.26rem;
+    background-color: #fff;
+}
+
+.compareChart {
+    height: 1.67rem;
+}
+
+.tabs {
+    font-size: 0.08rem;
+    display: flex;
+    margin: 0 auto;
+    width: 2.3rem;
+    height: 0.22rem;
+    background-color: #fff;
+    line-height: 0.22rem;
+    border-radius: 1.294px;
+    background: #FFF;
+    border: solid 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1.294px 1.294px 0px rgba(0, 0, 0, 0.13);
+    border-radius: 0.02rem;
+}
+
+.tabs>div {
+    width: 0.76rem;
+    border-right: 0.5px solid #44BF99;
+    font-weight: 5rem;
+    color: #44BF99;
+    text-align: center;
+}
+
+.tabs>div:hover {
+    background-color: #44BF99;
+    color: #fff;
+}
+
+

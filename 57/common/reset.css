@@ -1,0 +1,15 @@
+body, p, img, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+.firstChild{
+    height: 0;
+    overflow: hidden;
+}
+body{
+    font-size: 0.07rem;
+}

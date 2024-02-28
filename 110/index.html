@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="op">
+            <button  class="btn">点击我</button>
+        </div>
+    </div>
+    <script >
+        document.querySelector('.container').addEventListener('click',function(){
+            console.log('container监听到了点击');
+        },true)
+        document.querySelector('.op').addEventListener('click',function(e){
+            // e.stopPropagation()
+            e.stopImmediatePropagation()
+            console.log('op监听到了点击');
+        },true)
+        document.querySelector('.btn').addEventListener('click',function(){
+            console.log('btn监听到了点击');
+        },true)
+
+        //  冒泡
+        document.querySelector('.container').addEventListener('click',function(){
+            console.log('container监听到了点击');
+        })
+        document.querySelector('.op').addEventListener('click',function(e){
+            // e.stopPropagation()
+            console.log('op监听到了点击');
+        })
+        document.querySelector('.btn').addEventListener('click',function(){
+            console.log('btn监听到了点击');
+        })
+        document.querySelector('.op').addEventListener('click',function(e){
+            
+            console.warn('op的其它监听到了点击');
+        },true)
+
+    </script>
+</body>
+</html>

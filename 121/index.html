@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        // XMLHttpRequest axios
+        console.log('fetch' in window);
+        fetch('http://127.0.0.1:5500/getData.json?c=2331&ccc=123',{
+            method:'GET'
+        })
+        .then(response=>{
+            
+            return response.json()
+        })
+        .then(res=>{
+            console.log(res.data);
+        })
+    </script>
+</body>
+
+</html>

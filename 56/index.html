@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+  
+</head>
+
+<body>
+    <header id="top">
+        <!-- 筛选区 -->
+
+        <form action="" method="get">
+            <!-- 城市选择 -->
+            <div class="form-item">
+                <label for="city">城市选择：</label>
+                <select name="city" id="city">
+                    <option value="0">东京</option>
+                    <option value="1">北京</option>
+                    <option value="2">孟买</option>
+                    <option value="3">温哥华</option>
+                    <option value="4">华盛顿</option>
+                </select>
+            </div>
+            <div  class="form-item">
+                <!-- 选择房型 -->
+                <label for="">选择房型：</label>
+                <label for="">一室<input type="radio" name="roomType" value="1"></label>
+                <label for="">二室<input type="radio" name="roomType" value="2"></label>
+
+            </div>
+            <div  class="form-item">
+                <!-- 设施 -->
+                <label for="">设施：</label>
+                <label for="">洗衣机<input type="checkbox" name="facility" value="a" ></label>
+                <label for="">冰箱<input type="checkbox" name="facility" value="b"></label>
+                <label for="">网络<input type="checkbox" name="facility" value="c"></label>
+                <label for="">空调<input type="checkbox" name="facility" value="d"></label>
+                
+            </div>
+            <div  class="form-item">
+                <!-- 入住人数 -->
+                <label for="stayNum">入住人数:</label>
+                <input type="number">
+            </div>
+            <div  class="form-item">
+                <!-- 留言 -->
+                <label for="message">留言</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div  class="form-item">
+                <input type="reset" value="重置">
+                <input type="submit" value="提交">
+            </div>
+        </form>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="#cityDescription">城市介绍</a></li>
+            <li><a href="#roomList">房间列表</a></li>
+            <li><a href="#dataView">数据概览</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ol>
+    </nav>
+    <section id="cityDescription">
+        <!-- 城市介绍 -->
+        <p>城市介绍：</p>
+        <img src="https://images.unsplash.com/photo-1594058573823-d8edf1ad3380?q=80&w=462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="100%">
+        <p>
+            这个城市很生活化，很美，街道很干净。
+        </p>
+    </section>
+    <section id="roomList">
+        <!-- 房间列表 -->
+        <div>房间列表：</div>
+        <ul>
+            <li>
+                <img width="200px" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <p>房间标题</p>
+                <p>介绍：这很干净</p>
+                <p>位置：远郊</p>
+                <p>价格：100刀</p>
+            </li>
+            <li>
+                <img width="200px" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <p>房间标题</p>
+                <p>介绍：这很干净</p>
+                <p>位置：远郊</p>
+                <p>价格：100刀</p>
+            </li>
+            <li>
+                <img width="200px" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <p>房间标题</p>
+                <p>介绍：这很干净</p>
+                <p>位置：远郊</p>
+                <p>价格：100刀</p>
+            </li>
+            <li>
+                <img width="200px" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <p>房间标题</p>
+                <p>介绍：这很干净</p>
+                <p>位置：远郊</p>
+                <p>价格：100刀</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </li>
+        </ul>
+    </section>
+    <div id="dataView">
+        <!-- 数据概览 -->
+        <div>
+            数据概览：
+        </div>
+        <p>
+            <span>房间数量：<span style="color: red;">20</span></span>
+            <span>城市数量：<span style="color:red">4</span></span>
+        </p>
+    </div>
+    <footer id="contact">
+        <a href="./contact.html">联系我们</a>
+    </footer>
+    <div><a href="#top" style="position: fixed;bottom: 10px;right: 10px;">回到顶部</a></div>
+    <div style="height: 100px;"></div>
+</body>
+
+</html>

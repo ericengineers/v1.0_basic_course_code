@@ -1,0 +1,172 @@
+.container {
+    width: 935px;
+    margin: 0 auto;
+    padding-top: 30px;
+    .info {
+        display: flex;
+
+        .avatar {
+            width: 290px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .infoContent {
+
+
+            .interaction {
+                height: 48px;
+                display: flex;
+                align-items: center;
+
+                .nikname {
+                    font-size: 20px;
+                }
+
+                .followBtn {
+                    margin-left: 20px;
+                    width: 80px;
+                    height: 32px;
+                    background-color: rgb(239, 239, 239);
+                    border-radius: 4px;
+                    text-align: center;
+                    line-height: 32px;
+                    cursor: pointer;
+                }
+
+                .active {
+                    background-color: rgb(0, 149, 246);
+                    color: #fff;
+                }
+
+                .messageBtn {
+                    margin-left: 20px;
+                    width: 80px;
+                    height: 32px;
+                    background-color: rgb(239, 239, 239);
+                    border-radius: 4px;
+                    text-align: center;
+                    line-height: 32px;
+                    cursor: pointer;
+                }
+                .btn{
+                    margin-left: 20px;
+                    width: 80px;
+                    height: 32px;
+                    background-color: rgb(239, 239, 239);
+                    border-radius: 4px;
+                    text-align: center;
+                    line-height: 32px;
+                    cursor: pointer;
+                }
+
+                .moreBtn {
+                    margin-left: 20px;
+                    width: 100px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+
+            .data {
+                width: 400px;
+                margin: 18px 0;
+                font-size: 17px;
+                display: flex;
+
+                .item {
+                    margin-right: 40px;
+                }
+
+                .bold {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .tabs {
+        display: flex;
+        justify-content: center;
+        margin-top: 44px;
+        border-top: 1px solid rgb(219, 219, 219);
+
+        .tab {
+            margin-right: 60px;
+            height: 52px;
+            width: 44px;
+            line-height: 52px;
+            font-size: 12px;
+            border-top: 1px solid #fff;
+            cursor: pointer;
+        }
+
+        .selected {
+            border-top: 1px solid rgb(142, 142, 142);
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: start;
+
+        .contentItem {
+            width: 309px;
+            height: 309px;
+            overflow: hidden;
+            margin-right: 2px;
+            cursor: pointer;
+            position: relative;
+
+            img {
+                width: 100%;
+
+            }
+            &:hover{
+                .maskContainer{
+                    display: block;
+                }
+            }
+
+            .maskContainer {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+
+                .mask {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #000;
+                    opacity: 0.7;
+                    z-index: 2;
+                }
+
+                .maskData {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 3;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+
+                    .maskDataItem {
+                        width: 100px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

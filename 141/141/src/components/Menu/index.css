@@ -1,0 +1,60 @@
+.left{
+    border-right: 1px solid rgb(219, 219, 219);
+    width: 140px;
+    padding: 8px 12px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.website-name{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.logo{
+    margin: 25px 12px;
+}
+.menu{
+   
+    font-size: 16px;
+   
+}
+.menu .name{
+    font-size: 17px;
+    
+    margin-left: 8px;
+}
+.menu li{
+    display: flex;
+    align-items: center;
+    height: 36px;
+    cursor: pointer;
+    padding-left: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.menu li i{
+    font-size: 24px;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.menu .active{
+    font-weight: 600;
+}
+.menu-bottom{
+    padding-left: 12px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+}
+
+.down-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+}

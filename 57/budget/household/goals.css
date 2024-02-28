@@ -1,0 +1,122 @@
+header {
+    height: 0.57rem;
+    font-size: 0.12rem;
+    background-color: #D4F4E4;
+    display: flex;
+    align-items: flex-end;
+}
+
+header>p {
+    margin-left: 0.25rem;
+    margin-bottom: 0.11rem;
+    font-weight: 500;
+}
+
+.group {
+    background-color: #D4F4E4;
+    height: 0.2rem;
+    font-size: 0.08rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.group>div {
+    width: 0.9rem;
+
+    text-align: center;
+}
+
+.group>div:first-child {
+    border-bottom: solid 0.02rem #008768;
+}
+
+.container {
+    background-color: #F9FBF8;
+    min-height: 100vh;
+    padding: 0 0.15rem;
+    font-size: 0.08rem;
+}
+
+.totalView {
+    margin-top: 0.21rem;
+    height: 0.46rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0.23rem;
+    font-size: 0.09rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+.totalView>div>p {
+    margin-top: 0.025rem;
+}
+
+.totalView>div:last-child {
+    text-align: right
+}
+
+.tabs {
+    font-size: 0.08rem;
+    display: flex;
+    margin-top: 0.1rem;
+    height: 0.22rem;
+    background-color: #fff;
+    line-height: 0.22rem;
+    border-radius: 1.294px;
+    background: #FFF;
+    border: solid 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1.294px 1.294px 0px rgba(0, 0, 0, 0.13);
+    border-radius: 0.02rem;
+}
+
+.tabs>div {
+    width: 0.84rem;
+    border-right: 0.5px solid #44BF99;
+    font-weight: 5rem;
+    color: #44BF99;
+    text-align: center;
+}
+
+.tabs>div:hover {
+    background-color: #44BF99;
+    color: #fff;
+}
+
+.list .item{
+    background-color: #fff;
+    margin-top: 0.1rem;
+    
+}
+.list .item .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.13rem 0.18rem;
+}
+.list .item .content{
+    display: flex;
+    justify-content: start;
+    padding: 0   0.16rem 0.18rem 0.16rem;
+    overflow-x: scroll;
+}
+.content .person{
+    padding: 0 0.05rem;
+    margin-left: 0.21rem;
+    display: flex;
+    background-color: rgba(99, 219, 182, 0.20);
+    width: 1.03rem;
+    height: 0.33rem;
+    border-radius: 0.06rem;
+}
+.content .person:first-child{
+    margin-left: 0;
+}
+.container .person .info{
+    margin-left: 0.09rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
